@@ -1,4 +1,22 @@
 #Ejercicio - Realizar una calculadora
+    
+
+def main():
+    print("--- Calculadora ---")
+
+    operando1 = float(input("Introduce el primer operando: "))
+    operando2 = float(input("Introduce el segundo operando: "))
+
+    operacion = int(input("Selecciona la operacion a realizar" + "\n" + 
+                        "1- Sumar" + "\n" +
+                        "2- Restar" + "\n" +
+                        "3- Multiplicar" + "\n" +
+                        "4- Dividir"))
+
+    resultado = calcular(operando1, operando2, operacion)
+
+    print(f"Resultado: {resultado}" )
+    
 
 def calcular(operando1, operando2, operador):
     resultado = 0
@@ -19,23 +37,6 @@ def calcular(operando1, operando2, operador):
             print("Opcion no valida")
             
     return resultado
-    
-
-def main():
-    print("--- Calculadora ---")
-
-    operando1 = float(input("Introduce el primer operando: "))
-    operando2 = float(input("Introduce el segundo operando: "))
-
-    operacion = int(input("Selecciona la operacion a realizar" + "\n" + 
-                        "1- Sumar" + "\n" +
-                        "2- Restar" + "\n" +
-                        "3- Multiplicar" + "\n" +
-                        "4- Dividir"))
-
-    resultado = calcular(operando1, operando2, operacion)
-
-    print(f"Resultado: {resultado}" )
 
 main()
 
